@@ -5,7 +5,7 @@
 Using the Azure cloud platform, I created and configured two virtual machines, one to use OpenVAS and conduct vulnerability scanning and vulnerability management, and another to be used as an exposed and insecure virtual machine from which vulnerabilities would be recorded. The insecure virtual machine was misconfigured with insecure security settings and had outdated software from which the vulnerability scanner detected and recorded weaknesses and flaws in the system. By using OpenVAS I can detect and mitigate exposures and potential attack vectors, with greater details being obtained by OpenVAS records when credentials of hosts are provided within the vulnerability scans.  
 
 
-## Architecture of the Computers tied to the Vulnerabiility Scan and OpenVAS:
+## Architecture and Metrics within the Vulnerabiility Scan and OpenVAS:
 -  Virtual Machine 1 (Uses OpenVAS)
     -  Connection to OpenVAS by SSH is done through a terminal of the virtual machine providing credentials and a web link from which we will sign into the OpenVAS vulnerability management application through a web browser.      
 -  Virtual Machine 2 (Insecure Windows 10 Host)
@@ -14,6 +14,12 @@ Using the Azure cloud platform, I created and configured two virtual machines, o
         - Firefox
     - Misconfigured Security Settings
         - Disabled Firewall Settings
+- Metrics in the Vulnerability Scan Reports
+    - Results
+    - Applications
+    - CVEs
+    - Closed CVEs
+    - TLS Certifications
 
 ## Connecting to the OpenVAS web-app 
 
