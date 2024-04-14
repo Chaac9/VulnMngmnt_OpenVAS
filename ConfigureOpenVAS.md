@@ -17,9 +17,9 @@ We will then create a task, as tasks are used to control the executions of scans
   - Select the "Scans" category andthen selec the "Tasks" option 
   - Then select the same icon located under the "Dashboards" category that has a star on the corner of the block icon 
   - When configuring our tasks, select the target recently made in the first step
-        -- We will select default options when creating the new task, but there are several other options such as Alerts and Schedule
-        -- Alerts allows the user to send changes found within scans to an email, syslog, or other connectors 
-        -- The Schedule option alows for scans to be run on a schedule, such as every Wednesday at 10:00 a.m.
+    - We will select default options when creating the new task, but there are several other options such as Alerts and Schedule
+    - Alerts allows the user to send changes found within scans to an email, syslog, or other connectors 
+    - The Schedule option alows for scans to be run on a schedule, such as every Wednesday at 10:00 a.m.
 ![image](https://github.com/Chaac9/VulnMngmnt_OpenVAS/assets/98796264/c05a7900-1103-4228-8ae2-c68da9a1043e)
 
 
@@ -34,8 +34,9 @@ We will now add credentials for our authenticated scan to allow the vulnerabilit
   - Select the "Configurations" option and then the "Credentials" option 
   - We will select the same icon used to create objects as the other devices locate under the "Dashboard" categoery
   - Provide a name, for the type select "Username + Password," and input the Username and password of the target device usedd to login
-      -- Select "No" for the "Allow Insecure use" and the "Auto-generate" options
-![image](https://github.com/Chaac9/VulnMngmnt_OpenVAS/assets/98796264/1930278d-ead6-4051-9d12-35f1e2b7a70c)
+    - Select "No" for the "Allow Insecure use" and the "Auto-generate" options
+![image](https://github.com/Chaac9/VulnMngmnt_OpenVAS/assets/98796264/f2ddf5b8-0ad8-4543-aba5-8d8d55afd775)
+
 
 
 we will now configure a new target, which will use the SMB credentials to login
@@ -43,7 +44,8 @@ we will now configure a new target, which will use the SMB credentials to login
   - We will then select the "Edit Target" option under the "Actions" category and make the changes needed under the "Credentials for authenticated checks" 
   - In the "SMB" category we will selecct the credentials recent made under "Configurations" > "Credentials." 
   - Save the changes made
-![image](https://github.com/Chaac9/VulnMngmnt_OpenVAS/assets/98796264/fa601998-e550-4e3d-8f4e-3f3f695d93c3)
+![image](https://github.com/Chaac9/VulnMngmnt_OpenVAS/assets/98796264/452aeb09-94a0-4ad6-8215-2140af1b2bef)
+
 
 
 The last step is to create and  execute the newly cloned authenticated scan which will now use our newly configured cloned target that uses the SMB credentials 
